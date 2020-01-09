@@ -248,11 +248,11 @@ public class View
 				mySkills[j].add(myButtonsInner[i]);
 			}
 		}
-		mySkillsPane.addTab("Mastermind", new ImageIcon("images/lightbulb.png"), mySkills[0], "Mastermind Skill Tree");
-		mySkillsPane.addTab("Enforcer", new ImageIcon("images/shield.png"), mySkills[1], "Enforcer Skill Tree");
-		mySkillsPane.addTab("Technician", new ImageIcon("images/gear.png"), mySkills[2], "Technician Skill Tree");
-		mySkillsPane.addTab("Ghost", new ImageIcon("images/ghost.png"), mySkills[3], "Ghost Skill Tree");
-		mySkillsPane.addTab("Fugitive", new ImageIcon("images/x.png"), mySkills[4], "Fugitive Skill Tree");
+		mySkillsPane.addTab("Mastermind", new ImageIcon(ResourceLoader.loadImage("lightbulb.png")), mySkills[0], "Mastermind Skill Tree");
+		mySkillsPane.addTab("Enforcer", new ImageIcon(ResourceLoader.loadImage("shield.png")), mySkills[1], "Enforcer Skill Tree");
+		mySkillsPane.addTab("Technician", new ImageIcon(ResourceLoader.loadImage("gear.png")), mySkills[2], "Technician Skill Tree");
+		mySkillsPane.addTab("Ghost", new ImageIcon(ResourceLoader.loadImage("ghost.png")), mySkills[3], "Ghost Skill Tree");
+		mySkillsPane.addTab("Fugitive", new ImageIcon(ResourceLoader.loadImage("x.png")), mySkills[4], "Fugitive Skill Tree");
 		
 		System.out.println("Top gap: " + (myButtonsOuter[0].getY() - mySkillsPane.getY()));
 		System.out.println("Bot gap: " + (mySkillsPane.getHeight() - (myButtonsOuter[3].getY() + myButtonsOuter[3].getHeight())));
